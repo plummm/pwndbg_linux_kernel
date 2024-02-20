@@ -20,7 +20,7 @@ osx() {
 
 install_apt() {
     sudo apt-get update || true
-    sudo apt-get -y install gdb python-dev python3-dev python3-pip libglib2.0-dev libc6-dbg
+    sudo apt-get -y install gdb python3-dev python3-pip libglib2.0-dev libc6-dbg
 
     if uname -m | grep x86_64 > /dev/null; then
         sudo apt-get -y install libc6-dbg:i386 || true
